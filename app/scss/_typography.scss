@@ -1,0 +1,39 @@
+// . TYPOGRAPHY .
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Fira+Code:wght@300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+$font-display: Roboto, sans-serif;
+$font-copy: "EB Garamond", serif;
+$font-monospace: "Fira Code", monospace;
+
+$line-height: 1.5;
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $font-display;
+}
+
+h1 {
+  font-size: ms(6);
+}
+
+h2 {
+  font-size: ms(5);
+}
+h3 {
+  font-size: ms(4);
+}
+
+body {
+  font-family: $font-copy;
+  font-size: ms(3);
+}
+
+pre,
+code {
+  font-family: $font-monospace;
+  font-size: ms(2);
+}

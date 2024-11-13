@@ -1,0 +1,69 @@
+1. To do
+Date: Wed 13 nov 2024
+
+1.1 Priority 1
+Things to do today.
+x Set up next.js app
+o Set up SCSS
+    x install <- `npm i sass` (next built in parser)
+    x use it
+    o Select default fonts
+    o set up class hierarchy
+    x Bring in modular scale
+        x install   <- `npm install modularscale-sass`
+        x use it    <- `@import "~modularscale-sass/stylesheets/modularscale"`
+        [Check this out](https://www.npmjs.com/package/modularscale-sass)
+x Insert MJ monogram
+x Change page title <- It's in the next.Metadata (layout.tsx)
+o Initialize git repository
+o Push to github
+
+1.2 Priority 2
+x Bring in favicon.ico (MJ monograph)
+o Play around with markdown
+o Bring in some content from previous project
+    o Landing page: "You have entered The System"
+    o Lightbox: browse the photos
+
+
+2. Ideas
+Explore the markdown sytax and come up with possibilities
+Numbering: auto | off | manual | as is
+    auto: number each heading sequentially (according to a template)
+    off: ignore manually typed numbering
+    manual: reorder paragraphs according to manually typed numbering
+    as is: apply formatting but leave the numbering as is
+
+3. Features I'd love to see implemented
+o My financial situation
+o My task lists
+    o as .ics to use as a Google calendar?
+    o GTD framework - explore it more
+o TPD blog
+    o as a Flow (feed)
+    o as the dozenal grid (book spreads)
+O Markdown editor
+    o Easy to edit html generator
+    o tokens should be draggable boxes you can move around and shuffle
+
+
+4. In other developments
+More task lists
+o How to incorporate the pomodoro technique into the daily routine
+    o Daily review: splitting tasks into pomodoros
+    o Weekly reviews on progress
+    o Nagging time/prep time/completion time (read more on time blocking)
+o Triangular shelves in the living room
+
+Learn CSS
+o What is the difference between SCSS and CSS variables?
+o Are fonts better linked to google or in a local folder?
+
+How the markdown solution should work (first ideas)
+1. To do                        # this is a Level 1 Heading (h1)
+Date: Wed 13 nov 2024
+
+1.1 Priority 1                  # this is a Level 2 Heading (h2)
+Things to do today.             # this is a paragraph, because it ends with a full stop (p)
+x Set up next js app            # this is a ticked box in a list
+o Set up SCSS                   # this is an unticked box in a list
