@@ -1,0 +1,19 @@
+@import "components/header";
+
+%two-column {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: ms(8);
+}
+
+.container {
+  height: 100vh;
+  width: 75vw;
+  margin: 0 auto;
+}
+
+main {
+  @extend %two-column;
+  margin-top: ms(6);
+  height: 100%;
+}

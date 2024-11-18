@@ -1,0 +1,17 @@
+@mixin bp($size) {
+  @if $size == "portrait" {
+    @media only screen and (max-aspect-ratio: 1/1) {
+      @content;
+    }
+  }
+
+  @if $size == "landscape" {
+    @media only screen and (min-aspect-ratio: 1/1) {
+      @content;
+    }
+  }
+
+  @media only screen and (max-width: $size) {
+    @content;
+  }
+}

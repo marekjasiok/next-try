@@ -1,23 +1,17 @@
-@import "~modularscale-sass/stylesheets/modularscale";
+@import "reset";
+@import "color_palette";
+@import "modularscale";
 
-// QUID Sass vars vs CSS vars?
-
-// . COLORS . (there are none...)
-$color-text: black;
-$color-bg: white;
-$rem-size: 75%; // assuming 16px browser default, 1rem = 12px
 // perhaps experiment with responsive type: https://codepen.io/MadeByMike/pen/YPJJYv?editors=110
 
 :root {
-  --background: $color-text;
-  --foreground: $color-bg;
-  font-size: $rem-size;
-}
+  --background: #{$color-bg}; // <- SCSS var must be #{interpolated}
+  --foreground: #{$color-fg};
+  // font-size: $rem-size;
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+  @media (prefers-color-scheme: dark) {
+    --background: #{$color-fg};
+    --foreground: #{$color-bg};
   }
 }
 
@@ -39,11 +33,6 @@ body {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
 }
 
 @media (prefers-color-scheme: dark) {
