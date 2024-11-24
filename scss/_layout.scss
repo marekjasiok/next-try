@@ -1,9 +1,8 @@
-@import "components/header";
-
 %two-column {
   display: grid;
   grid-template-columns: 1fr 1fr;
   column-gap: ms(8);
+  padding-bottom: ms(10);
 }
 
 .container {

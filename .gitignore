@@ -3,6 +3,9 @@
 # private archive
 scrap
 
+# content data
+/public/photos
+
 # dependencies
 /node_modules
 /.pnp

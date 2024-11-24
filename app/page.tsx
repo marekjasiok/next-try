@@ -3,24 +3,22 @@
 
 import { Metadata } from "next";
 import Link from "next/link";
+import Welcome from "@/mdx/welcome.mdx";
+import Notes from "@/NOTES.mdx";
 
 // change the title
 export const metadata: Metadata = { title: "You have entered The System_" };
 
 export default function Home() {
   return (
-    <>
+    <main>
       <div>
-        <p>Some instructions will come here?</p>
-        <p>Starts to look good to me...</p>
+        <h1>Notes</h1>
+        <Notes />
       </div>
       <div>
-        <h1>Welcome!</h1>
-        <p>This is the Landing page</p>
-        <p>
-          From here you can enter <Link href="/thesystem">The System</Link>
-        </p>
+        <Welcome />
       </div>
-    </>
+    </main>
   );
 }

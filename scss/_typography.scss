@@ -38,15 +38,22 @@ h1 {
 
 h2 {
   font-size: ms(5);
+  margin-top: ms(6);
+  margin-bottom: ms(1);
 }
 h3 {
   font-size: ms(4);
+  margin-bottom: ms(4);
 }
 
 //   . BODY TEXT .
 body {
   font-family: $font-body;
   font-size: ms(3);
+}
+
+p {
+  margin-bottom: ms(2);
 }
 
 small {
@@ -70,10 +77,14 @@ a {
   }
 }
 
+ul li::before {
+  content: ". ";
+}
+
 pre,
 code {
+  white-space: pre;
   font-family: $font-monospace;
   font-size: ms(2);
-  width: 100px;
   word-break: break-all;
 }

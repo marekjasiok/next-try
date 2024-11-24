@@ -3,39 +3,20 @@
 import { Metadata } from "next";
 import Link from "next/link";
 
+import Colophon from "./colophon.mdx";
+import ToDos from "./TODO.mdx";
+
 export const metadata: Metadata = { title: "You have entered The System_" };
 
-export default function Home() {
+export default function TheSystem() {
   return (
-    <>
+    <main>
       <div>
-        <p>
-          Currently playing with the{" "}
-          <Link href="/modularscale">Modular scale</Link>
-        </p>
+        <ToDos />
       </div>
       <div>
-        <pre>{`. . . You have entered . . .
-.        The System        .
-             .
-
-
-
-
-
-
-
-             .
-
-
-
-
-
-
-
-
-.                          .`}</pre>
+        <Colophon />
       </div>
-    </>
+    </main>
   );
 }

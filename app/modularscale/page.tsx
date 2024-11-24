@@ -4,15 +4,21 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = { title: "The Basics of a Modular Scale" };
 
-export default function Home() {
+export default function ModularScale() {
   return (
-    <>
+    <main>
       <div>
         <h3>Explanation</h3>
         <small>
           The modular scale allows for locking in design elements to a fixed set
           of sizes.
         </small>
+        <p>
+          I have the feeling they got it wrong, too: the heading "levels" should
+          be counted up not down. If you have just one level of headings, you
+          won't use "H1" for it, it'd look too big. So "1" should mean one level
+          up from base text, "2" should be bigger than "1" and so on.
+        </p>
       </div>
       <div>
         <h1>Modular scale</h1>
@@ -29,6 +35,6 @@ export default function Home() {
         <p className="scale-1">This text has scale 1</p>
         <p className="scale-0">This text has scale 0</p>
       </div>
-    </>
+    </main>
   );
 }

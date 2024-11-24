@@ -1,9 +1,8 @@
 header {
   @extend %two-column;
-  // TODO: start with a base case, then make a two-column variation
-  display: flex;
   height: ms(9);
   align-items: center;
+  margin-top: ms(4);
   p {
     font-size: ms(4);
     font-weight: 500;
@@ -13,5 +12,8 @@ header {
 .monogram {
   height: ms(7);
   fill: var(--foreground);
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 5px;
   margin-right: ms(4);
 }

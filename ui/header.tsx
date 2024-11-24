@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Monogram from "@/app/ui/monogram";
+import Monogram from "@/ui/monogram";
 
 export default function Header() {
   return (
