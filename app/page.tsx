@@ -11,7 +11,7 @@ export const metadata: Metadata = { title: "You have entered The System_" };
 
 export default function Home() {
   return (
-    <main>
+    <>
       <div>
         <h1>Notes</h1>
         <Notes />
@@ -19,6 +19,6 @@ export default function Home() {
       <div>
         <Welcome />
       </div>
-    </main>
+    </>
   );
 }

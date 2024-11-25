@@ -10,13 +10,13 @@ export const metadata: Metadata = { title: "You have entered The System_" };
 
 export default function TheSystem() {
   return (
-    <main>
+    <>
       <div>
         <ToDos />
       </div>
       <div>
         <Colophon />
       </div>
-    </main>
+    </>
   );
 }
