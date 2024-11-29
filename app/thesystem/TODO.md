@@ -1,9 +1,11 @@
-# {props.title ? props.title : "To do"}
+# The System: to do
 
 ## Today
 - [ ] Bring in md content from previous project
     - [x] Copy files
-    - [ ] How to feed an `.md` file? (Watch [that tutorial](#) again)
+    - [x] How to feed an `.md` file? (Watch [that tutorial](https://www.youtube.com/watch?v=MsSUAOkepCw&t=412s&ab_channel=ColbyFayock) again)
+    - [x] install next-mdx-remote
+    - [ ] serve through a dynamic route (by id)
 {/* Done for the day. */}
 ## Tomorrow
 - Let's not go overboard with fancy components just yet

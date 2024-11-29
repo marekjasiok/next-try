@@ -3,8 +3,7 @@
 
 import { Metadata } from "next";
 import Link from "next/link";
-import Welcome from "@/mdx/welcome.mdx";
-import Notes from "@/NOTES.mdx";
+import Note from "@/ui/note";
 
 // change the title
 export const metadata: Metadata = { title: "You have entered The System_" };
@@ -12,13 +11,8 @@ export const metadata: Metadata = { title: "You have entered The System_" };
 export default function Home() {
   return (
     <>
-      <div>
-        <h1>Notes</h1>
-        <Notes />
-      </div>
-      <div>
-        <Welcome />
-      </div>
+      <Note url="./NOTES" />
+      <Note url="welcome" />
     </>
   );
 }
