@@ -38,3 +38,31 @@
 
 Categorize in: `must | should | may | might` do
            in the given _time horizon:_ `today | tomorrow | this week | this weekend | this month | this year | Date | unspecified:depriorized`
+
+# The System
+
+## Ideas
+
+Explore the markdown sytax and come up with possibilities
+Numbering: auto | off | manual | as is
+auto: number each heading sequentially (according to a template)
+off: ignore manually typed numbering
+manual: reorder paragraphs according to manually typed numbering
+as is: apply formatting but leave the numbering as is
+
+- [ ] intuition: event1 => (happened before/after) => event2
+- [ ] photo1 => (taken) => location
+- [ ] learn the syntax (cipher query languqge)
+
+## Features I'd love to see implemented
+
+- [ ] My financial situation
+- [ ] My task lists
+- [ ] as .ics to use as a Google calendar?
+- [ ] GTD framework - explore it more
+- [ ] TPD blog
+   - [ ] as a Flow (feed)
+   - [ ] as the dozenal grid (book spreads)
+- [ ] Markdown editor
+   - [ ] Easy to edit html generator
+- [ ] tokens should be draggable boxes you can move around and shuffle

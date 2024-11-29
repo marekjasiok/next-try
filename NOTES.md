@@ -1,5 +1,5 @@
-ASTs: (https://github.com/unifiedjs/unified) to manipulate syntax trees
-(https://github.com/jkeyes/baseline)
+- ASTs: [`unified`](https://github.com/unifiedjs/unified) to manipulate syntax trees
+- Useful typography tool [Baseliner](https://github.com/jkeyes/baseline)
 
 ### Useful html entities
 
@@ -10,33 +10,9 @@ ASTs: (https://github.com/unifiedjs/unified) to manipulate syntax trees
 - Set the Screenshot location on macOS to Downloads, because this is what they are: it automatically creates an **Inbox** of things you now want to do with them without clutterning your Desktop
 - Start EVERY coding session with the git commit message - then focus on making it come true
 
-# The System
+## System to do
 
-## Ideas
-
-Explore the markdown sytax and come up with possibilities
-Numbering: auto | off | manual | as is
-auto: number each heading sequentially (according to a template)
-off: ignore manually typed numbering
-manual: reorder paragraphs according to manually typed numbering
-as is: apply formatting but leave the numbering as is
-
-- [ ] intuition: event1 => (happened before/after) => event2
-- [ ] photo1 => (taken) => location
-- [ ] learn the syntax (cipher query languqge)
-
-## Features I'd love to see implemented
-
-- [ ] My financial situation
-- [ ] My task lists
-- [ ] as .ics to use as a Google calendar?
-- [ ] GTD framework - explore it more
-- [ ] TPD blog
-   - [ ] as a Flow (feed)
-   - [ ] as the dozenal grid (book spreads)
-- [ ] Markdown editor
-   - [ ] Easy to edit html generator
-- [ ] tokens should be draggable boxes you can move around and shuffle
+_See_: [System to do](/thesystem)
 
 ## In other developments
 
