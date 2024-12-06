@@ -1,3 +1,4 @@
+# What to do for Marek Jasiok
 - ASTs: [`unified`](https://github.com/unifiedjs/unified) to manipulate syntax trees
 - Useful typography tool [Baseliner](https://github.com/jkeyes/baseline)
 
@@ -12,7 +13,7 @@
 
 ## System to do
 
-_See_: [System to do](/thesystem)
+_See_: [What to do for The System](/thesystem)
 
 ## In other developments
 

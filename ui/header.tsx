@@ -1,9 +1,13 @@
 import Link from "next/link";
 import Monogram from "@/ui/monogram";
 
-export default function Header() {
+interface HeaderProps {
+  title?: string;
+}
+
+export default function Header({ title = "The System" }: HeaderProps) {
   return (
-    <header>
+    <header className="header">
       <div>
         <Link href="/" className="soft">
           <Monogram />
@@ -12,7 +16,7 @@ export default function Header() {
       <div>
         <p>
           <Link href="/thesystem" className="soft">
-            The System
+            {title}
           </Link>
         </p>
       </div>

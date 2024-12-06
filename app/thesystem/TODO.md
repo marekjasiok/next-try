@@ -1,15 +1,19 @@
-# The System: to do
+# What to do for The System
 
 ## Today
-- [ ] Bring in md content from previous project
-    - [x] Copy files
-    - [x] How to feed an `.md` file? (Watch [that tutorial](https://www.youtube.com/watch?v=MsSUAOkepCw&t=412s&ab_channel=ColbyFayock) again)
-    - [x] install next-mdx-remote
-    - [ ] serve through a dynamic route (by id)
-{/* Done for the day. */}
+_Done for the day._
+
+## Done today
+* [x] Bring in md content from previous project
+    * [x] Copy files
+    * [x] How to feed an `.md` file? (Watch [that tutorial](https://www.youtube.com/watch?v=MsSUAOkepCw&t=412s&ab_channel=ColbyFayock) again)
+    * [x] install next-mdx-remote
+    * [x] serve through a dynamic route (by id)
+
 ## Tomorrow
 - Let's not go overboard with fancy components just yet
-    - [ ] Set up a good file structure start organizing the notes to files and folders, all accessible via the system `url`
+    - [ ] Set up a good file structure start organizing the notes to files and folders, all accessible via the system `url` (in `public/`?)
+    - [ ] Somehow distinguish between `.md` and `.mdx` (if in `/public` then `.md`)
     - [ ] Provide an automatic site map for the newly created content
 
 ## This week
@@ -18,6 +22,7 @@
     - [ ] Vertical rythm
 
 ## In near future
+- [ ] Indexing feature to be able to view everything that is already in the system (all `url`s)
 - [ ] Layout
     - [ ] "Recto/Verso" is a presentational detail (`CSS`): the semantic parts should be a `<main>` and `<aside>`
     - [ ] Show date & time with task lists ([Here's how, I think...](https://medium.com/create-a-clocking-in-system-on-react/create-a-react-app-displaying-the-current-date-and-time-using-hooks-21d946971556))

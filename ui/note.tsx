@@ -4,10 +4,10 @@ interface NoteProps {
   url: string;
 }
 
-export default function Note(props: NoteProps) {
+export default function Note({ url }: NoteProps) {
   return (
     <div className="note">
-      <ReadMDX url={props.url} />
+      <ReadMDX url={url} />
     </div>
   );
 }

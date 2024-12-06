@@ -16,3 +16,5 @@ This is what you mean by "trusted system".
 Anything not marked `completed` must 'hang' somewhere.
 
 Once you delve into a task, you may refine the granularity by attaching subtasks to it. Going from a sketch of an idea to the actionnable plan.
+
+Always decide what the next steps are before marking a task complete.

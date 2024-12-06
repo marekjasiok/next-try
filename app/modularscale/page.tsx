@@ -6,7 +6,7 @@ export const metadata: Metadata = { title: "The Basics of a Modular Scale" };
 
 export default function ModularScale() {
   return (
-    <main>
+    <>
       <div>
         <h3>Explanation</h3>
         <small>
@@ -35,6 +35,6 @@ export default function ModularScale() {
         <p className="scale-1">This text has scale 1</p>
         <p className="scale-0">This text has scale 0</p>
       </div>
-    </main>
+    </>
   );
 }

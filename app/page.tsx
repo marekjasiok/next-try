@@ -12,7 +12,12 @@ export default function Home() {
   return (
     <>
       <Note url="./NOTES" />
-      <Note url="welcome" />
+      <div>
+        <Note url="welcome" />
+        <p>
+          There are more <Link href="/notes">notes here</Link>.
+        </p>
+      </div>
     </>
   );
 }

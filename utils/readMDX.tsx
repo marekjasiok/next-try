@@ -10,7 +10,7 @@ export default async function ReadMDX({ url }: NoteProps) {
   const filepath = url.includes("/") ? url : `mdx/${url}`;
 
   // TODO: find file with the right extension md|mdx in the default folder
-  const extension = ".md";
+  const extension = url.includes(".md") ? "" : ".md";
 
   const content = await fs.readFile(
     path.join(process.cwd(), filepath + extension)
