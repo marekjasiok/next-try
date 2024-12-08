@@ -8,18 +8,20 @@ interface HeaderProps {
 export default function Header({ title = "The System" }: HeaderProps) {
   return (
     <header className="header">
-      <div>
+      <aside>
         <Link href="/" className="soft">
-          <Monogram />
+          <div className="monogram">
+            <Monogram />
+          </div>
         </Link>
-      </div>
-      <div>
+      </aside>
+      <main>
         <p>
           <Link href="/thesystem" className="soft">
             {title}
           </Link>
         </p>
-      </div>
+      </main>
     </header>
   );
 }

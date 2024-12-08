@@ -12,3 +12,14 @@ One viewport unit is simply 1% of the viewport and there are 4 types of viewport
 
 "Classic Typographic Scale is 6, 7, 8, 9, 10, 11, 12, 14, 16, 18, 21, 24, 36, 48, 60, 72, and so forth.
 This scale has been used by typographers of the early Renaissance; it has remained unchanged for 400 years."
+
+# Notes on Modular Scale
+
+## Whole Pica Modular Scale
+(_Bringhurst_: 168)
+
+Based on Fibonacci series
+
+strand_1: [1, 3, 5, 8, 13, 21, 34, 55]
+
+strand_2: [2, 4, 6, 10, 16, 26, 42, 68]

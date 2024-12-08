@@ -1,3 +1,7 @@
+- Currently playing with the [Modular scale](/modularscale)
+- Also trying to display some [Photos](/photos)
+- There is a [Playground](/example)
+
 # What to do for The System
 
 ## Today
@@ -38,8 +42,6 @@ _Done for the day._
 - [x] Please, let's migrate to `.mdx` and start writing a bit.
 
 ### More
-- Currently playing with the [Modular scale](/modularscale)
-- Also trying to display some [Photos](/photos)
 
 Categorize in: `must | should | may | might` do
            in the given _time horizon:_ `today | tomorrow | this week | this weekend | this month | this year | Date | unspecified:depriorized`

@@ -1,18 +1,119 @@
+@use "~modularscale-sass/stylesheets/modularscale";
+
+// Designing full screen first
+// TODO: add breakpoints (collapse gracefully)
+
+// # Bringhurst (4.1: 170)
+// ## Proportions
+//    P: page proportions (h/w)
+//    T: textblock proportions (d/m)
+// ## Page size
+//    h: height
+//    w: width
+// ## Textblock
+//    m: measure
+//    d: depth
+//    λ: line height (font size + added leading)
+//    n: secondary measure (if columns)
+//    c: column width
+// ## Margins
+//    s: spine
+//    t: top
+//    e: edge
+//    f: foot
+//    g: internal gutter (if columns)
+
+// Variables
+$P: 2/3;
+$S: 2 * $P; // Two-Page Spread
+$T: 2/3;
+$h: 100vh; // Flush to screen height
+// $w is derived from $P
+// $m is derived from $T
+// $λ is defined in typography
+$s: modularscale.ms(9);
+$t: modularscale.ms(2);
+$e: modularscale.ms(10);
+$f: modularscale.ms(2);
+
 %two-column {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  column-gap: ms(10);
-  padding-bottom: ms(10);
+  // column-gap: ms(12);
+}
+
+%margins {
+  margin-right: $s;
+  margin-left: $e;
+}
+
+%mirrored-margins {
+  @extend %margins;
+  &:nth-child(even) {
+    margin-left: $s;
+    margin-right: $e;
+  }
 }
 
 .container {
-  height: 100vh;
-  width: 75vw;
+  display: flex;
+  flex-direction: column;
+  height: $h;
+  aspect-ratio: $S;
   margin: 0 auto;
+  padding: 0;
+  // background-color: rgb(97, 104, 91);
 }
 
-main {
+header,
+footer {
   @extend %two-column;
-  margin-top: ms(6);
+  & > * {
+    @extend %mirrored-margins;
+  }
+}
+
+header {
+  margin-top: $t;
+}
+
+footer {
+  margin-bottom: $f;
   height: 100%;
+  align-items: end;
+  & > *:nth-child(even) {
+    justify-self: end;
+  }
+}
+
+.content {
+  @extend %two-column;
+  // background-color: rgb(64, 62, 58);
+
+  & > * {
+    // .textblock
+    @extend %mirrored-margins;
+    aspect-ratio: $T;
+    padding-bottom: modularscale.ms(10);
+    overflow: auto;
+    // background-color: rgb(48, 55, 53);
+  }
+}
+
+// PLAYGROUND
+.kitty {
+  background-color: rgb(211, 200, 216);
+  padding: modularscale.ms(0);
+  display: flex;
+  // flex-direction: column;
+  &:nth-child(4) {
+    justify-self: stretch;
+  }
+  & > * {
+    padding: modularscale.ms(1);
+    margin: modularscale.ms(1);
+    border: 1pt solid rebeccapurple;
+    border-radius: 0.35rem;
+    background-color: #bea5c0;
+  }
 }

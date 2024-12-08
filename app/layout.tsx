@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 import "../scss/styles.scss";
-import Header from "@/ui/header";
+
+import Header from "@/ui/components/header";
+import Content from "@/ui/components/content";
+import Footer from "@/ui/components/footer";
 
 // Adding title and othe metadata
 export const metadata: Metadata = {
@@ -17,8 +20,11 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <div className="container">
+          {/* TODO: Header determined by the url */}
           <Header />
-          <main className="content">{children}</main>
+          <Content>{children}</Content>
+          {/* TODO: Navigation determined by the url */}
+          <Footer />
         </div>
       </body>
     </html>

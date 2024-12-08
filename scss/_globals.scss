@@ -1,17 +1,17 @@
 // @import "reset";
-@import "color_palette";
-@import "modularscale";
+@use "color_palette";
+@use "modularscale";
 
 // perhaps experiment with responsive type: https://codepen.io/MadeByMike/pen/YPJJYv?editors=110
 
 :root {
-  --background: #{$color-bg}; // <- SCSS var must be #{interpolated}
-  --foreground: #{$color-fg};
+  --background: #{color_palette.$color-bg}; // <- SCSS var must be #{interpolated}
+  --foreground: #{color_palette.$color-fg};
   // font-size: $rem-size;
 
   @media (prefers-color-scheme: dark) {
-    --background: #{$color-fg};
-    --foreground: #{$color-bg};
+    --background: #{color_palette.$color-fg};
+    --foreground: #{color_palette.$color-bg};
   }
 }
 

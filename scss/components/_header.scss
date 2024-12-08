@@ -1,19 +1,21 @@
+@use "~modularscale-sass/stylesheets/modularscale";
+
 .header {
-  @extend %two-column;
-  height: ms(9);
+  height: modularscale.ms(9);
   align-items: center;
-  margin-top: ms(4);
+  padding-top: modularscale.ms(3);
+  padding-bottom: modularscale.ms(10);
   p {
-    font-size: ms(4);
+    font-size: modularscale.ms(4);
     font-weight: 500;
   }
 }
 
-.monogram {
-  height: ms(7);
+.monogram svg {
+  height: modularscale.ms(7);
   fill: var(--foreground);
   stroke-linecap: round;
   stroke-linejoin: round;
   stroke-width: 5px;
-  margin-right: ms(4);
+  margin-right: modularscale.ms(4);
 }

@@ -1,3 +1,5 @@
+@use "~modularscale-sass/stylesheets/modularscale";
+
 .colophon code {
-  font-size: ms(3);
+  font-size: modularscale.ms(3);
 }

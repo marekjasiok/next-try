@@ -1,3 +1,6 @@
+@use "~modularscale-sass/stylesheets/modularscale";
+@use "color_palette";
+
 // . TYPOGRAPHY .
 @import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Fira+Code:wght@300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
@@ -12,7 +15,7 @@ $line-height: 1.5;
 
 // DEBUG
 .accent {
-  color: $color-accent;
+  color: color_palette.$color-accent;
   font-weight: 600;
 }
 
@@ -33,34 +36,34 @@ h6 {
 }
 
 h1 {
-  font-size: ms(6);
+  font-size: modularscale.ms(6);
 }
 
 h2 {
-  font-size: ms(5);
-  margin-top: ms(6);
-  margin-bottom: ms(1);
+  font-size: modularscale.ms(5);
+  margin-top: modularscale.ms(6);
+  margin-bottom: modularscale.ms(1);
 }
 h3 {
-  font-size: ms(4);
-  margin-top: ms(4);
-  margin-bottom: ms(3);
+  font-size: modularscale.ms(4);
+  margin-top: modularscale.ms(4);
+  margin-bottom: modularscale.ms(3);
 }
 
 //   . BODY TEXT .
 body {
   font-family: $font-body;
-  font-size: ms(3);
+  font-size: modularscale.ms(3);
 }
 
 p {
-  margin-bottom: ms(2);
+  margin-bottom: modularscale.ms(2);
 }
 
 small {
   font-family: $font-display;
   font-weight: 300;
-  font-size: ms(1);
+  font-size: modularscale.ms(1);
 }
 
 strong {
@@ -78,10 +81,10 @@ a {
   display: inline-block;
   // ".soft" links appear as plain text
   &:not(.soft):first-letter {
-    text-decoration: underline $color-accent;
+    text-decoration: underline color_palette.$color-accent;
     text-decoration-thickness: 1pt;
     text-underline-offset: 3pt;
-    color: $color-accent;
+    color: color_palette.$color-accent;
     font-weight: 900;
   }
 }
@@ -91,7 +94,7 @@ ul {
 }
 
 li > ul > li {
-  margin-left: ms(3);
+  margin-left: modularscale.ms(3);
 }
 
 ul li::before {
@@ -102,6 +105,6 @@ pre,
 code {
   // white-space: pre;
   font-family: $font-monospace;
-  font-size: ms(2);
+  font-size: modularscale.ms(2);
   word-break: break-all;
 }
